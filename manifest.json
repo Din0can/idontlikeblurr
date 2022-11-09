@@ -4,6 +4,10 @@
     "description": "Just get rid of that for me please",
     "manifest_version": 3,
     "author": "Dino",
+    "permissions": [
+        "storage",
+        "input"
+    ],
     "action": {
         "default_popup": "index.html",
         "default_title": "Unblurrer"
