@@ -6,10 +6,23 @@
     "author": "Dino",
     "permissions": [
         "storage",
-        "input"
+        "input",
+        "scripting"
     ],
     "action": {
         "default_popup": "index.html",
         "default_title": "Unblurrer"
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
 }
